@@ -1,0 +1,202 @@
+/* Home Page Specific Styles */
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(to right, #e0f2f7, #c9e6f2); /* Light blue gradient */
+    padding: 80px 0;
+    text-align: center;
+    color: #2c3e50;
+    min-height: 80vh; /* Ensures it takes up at least 80% of viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.hero-photo {
+    width: 180px; /* Adjust size as needed */
+    height: 180px; /* Adjust size as needed */
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover;
+    border: 5px solid #fff; /* White border around the photo */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.hero-title {
+    font-size: 3.2em; /* Larger font for main title */
+    margin-bottom: 10px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #1a2c3e; /* Darker blue for emphasis */
+}
+
+.hero-subtitle {
+    font-size: 1.8em; /* Slightly smaller for subtitle */
+    font-weight: 400;
+    color: #34495e; /* Medium dark blue */
+    margin-bottom: 25px;
+}
+
+.hero-description {
+    font-size: 1.1em;
+    line-height: 1.8;
+    margin-bottom: 40px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #4a627a;
+}
+
+.hero-ctas {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between buttons */
+    flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+}
+
+/* Skills Preview Section */
+.skills-preview {
+    padding: 80px 0;
+    background-color: #f8fcfd; /* Very light blue background */
+    text-align: center;
+}
+
+.skills-preview h2 {
+    margin-bottom: 50px;
+    color: #2c3e50;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.skill-item {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.skill-item:hover {
+    transform: translateY(-5px);
+}
+
+/* --- Icon Styles for Skills (CRITICAL for SVG display on <i> tags) --- */
+.skill-item .icon {
+    display: block; /* Makes the <i> element behave like a box */
+    width: 60px;    /* Gives the icon a width */
+    height: 60px;   /* Gives the icon a height */
+    margin: 0 auto 15px auto; /* Centers the icon and adds space below */
+    background-size: contain; /* Scales the SVG to fit within the box */
+    background-repeat: no-repeat; /* Prevents repetition */
+    background-position: center; /* Centers the SVG within its area */
+}
+
+/* Specific skill icon paths - ensure these URLs are correct relative to home.css */
+.icon.html-css-js {
+    background-image: url('../assets/html-css-js.svg');
+}
+
+.icon.react {
+    background-image: url('../assets/react.svg');
+}
+
+.icon.java {
+    background-image: url('../assets/java.svg');
+}
+
+.icon.database {
+    background-image: url('../assets/mysql.svg');
+}
+
+
+.skill-item h3 {
+    font-size: 1.3em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.skill-item p {
+    font-size: 0.95em;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Featured Project Preview Section */
+.featured-project-preview {
+    padding: 80px 0;
+    background-color: #eaf6f6; /* A slightly darker light blue */
+}
+
+.featured-project-preview h2 {
+    margin-bottom: 50px;
+    text-align: center;
+    color: #2c3e50;
+}
+
+.project-highlight {
+    display: flex;
+    flex-direction: column; /* Default to column for mobile */
+    align-items: center;
+    gap: 40px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+}
+
+@media (min-width: 768px) {
+    .project-highlight {
+        flex-direction: row; /* Row layout for larger screens */
+        text-align: left;
+    }
+}
+
+.project-highlight-img {
+    max-width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+    flex-shrink: 0; /* Prevents image from shrinking too much */
+}
+
+@media (min-width: 768px) {
+    .project-highlight-img {
+        width: 40%; /* Image takes 40% width on larger screens */
+        height: 750px; /* Fixed height for consistency */
+    }
+}
+
+.project-highlight-content {
+    flex-grow: 1; /* Allows content to take remaining space */
+}
+
+.project-highlight-content h3 {
+    font-size: 2em;
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.project-highlight-content .project-tagline {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.project-highlight-content p {
+    font-size: 1em;
+    line-height: 1.7;
+    color: #666;
+    margin-bottom: 30px;
+}

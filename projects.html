@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karishmaa M | Projects</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/projects.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <a href="index.html" class="logo">Karishmaa M</a>
+            <nav class="main-nav">
+                <button class="hamburger-menu" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html" class="active">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="projects-hero">
+            <div class="container">
+                <h1>My Projects</h1>
+                <p>Showcasing my passion for building impactful web solutions.</p>
+            </div>
+        </section>
+
+        <section id="mindful-moments" class="project-detail-section">
+            <div class="container">
+                <h2>Mindful Moments: Your Daily Companion for Affirmations & Mood Tracking</h2>
+                <p class="project-subtitle">An interactive web tool designed to foster well-being through daily reflections and positive reinforcement.</p>
+
+                <div class="project-media">
+                    <img src="assets/projecthero.jpg" alt="Mindful Moments App Demo" class="project-main-image">
+                    
+                    <div class="project-screenshots">
+                        <img src="assets/projectss1.jpg" alt="Mindful Moments Screenshot 1 - Mood Logging">
+                        <img src="assets/projectss2.jpg" alt="Mindful Moments Screenshot 2 - Affirmations">
+                        </div>
+                </div>
+
+                <div class="project-info">
+                    <h3>Overview</h3>
+                    <p>Mindful Moments is a standalone web application developed to help users track their daily moods and engage with positive affirmations. Built purely with HTML, CSS, and JavaScript, it demonstrates a strong understanding of front-end development, DOM manipulation, and local storage management for persistent user data. This project highlights my ability to take an idea from concept to a deployable web application.</p>
+
+                    <h3>Key Features</h3>
+                    <p>Mindful Moments offers several core functionalities to support user well-being. It includes **Daily Mood Logging**, allowing users to easily record their emotional state with a simple, intuitive interface. The application also provides **Personalized Affirmations**, displaying uplifting and randomized positive messages to enhance well-being. Furthermore, it features **Historical Data Visualization**, utilizing JavaScript to dynamically manage and present user-specific historical mood data stored securely in the browser's local storage, offering insights into mood trends. Overall, the design prioritizes an **Intuitive User Interface**, focusing on simplicity and ease of use to encourage consistent engagement and a pleasant user experience.</p>
+
+                    <h3>Technologies Used</h3>
+                    <p class="technologies">HTML5 | CSS3 | JavaScript (ES6+)</p>
+
+                    <h3>Challenges & Solutions</h3>
+                    <p>During the development of Mindful Moments, one significant challenge was ensuring **Data Persistence** to effectively store and retrieve user-specific mood logs and preferences without a server-side database. This was addressed by leveraging the browser's `localStorage` API for efficient data serialization and retrieval, ensuring user data persists across sessions. Another key aspect was managing **Dynamic UI Updates**, to ensure the interface updates instantly based on user input and historical data changes. This was solved by implementing robust event listeners and direct DOM manipulation techniques to provide real-time feedback and a smooth user experience. Finally, a major focus was on **User Experience**, designing a calming and accessible interface for a sensitive topic like mood tracking. This was achieved by focusing on clean typography, a soothing color palette, and clear, concise interactions to create a welcoming environment for users.</p>
+                    
+                    <h3>What I Learned</h3>
+                    <ul>
+                        <li>Deepened my understanding of client-side data management using `localStorage` and `JSON` parsing.</li>
+                        <li>Enhanced skills in structuring complex JavaScript applications, focusing on modularity and maintainability.</li>
+                        <li>Gained practical experience in designing and implementing a complete user flow for a standalone web application.</li>
+                        <li>Reinforced the importance of user-centric design principles in all stages of development.</li>
+                    </ul>
+
+                    <div class="project-actions">
+                        <a href="https://mkarishmaa.github.io/Mood-Tracker/" target="_blank" class="btn btn-primary">Live Demo</a> 
+                        <a href="https://github.com/MKarishmaa/Mood-Tracker.git" target="_blank" class="btn btn-secondary">View Code on GitHub</a> 
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2025 Karishmaa M. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/karishmaa-m/" target="_blank" aria-label="LinkedIn Profile">
+                    <img src="assets/linkedin.svg" alt="LinkedIn">
+                </a>
+                <a href="https://github.com/MKarishmaa/Mood-Tracker" target="_blank" aria-label="GitHub Profile">
+                    <img src="assets/github.svg" alt="GitHub">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

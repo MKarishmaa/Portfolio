@@ -1,0 +1,204 @@
+/* Tablet and smaller desktops */
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    .main-header .nav-links li {
+        margin-left: 20px;
+    }
+
+    /* Home Page */
+    .hero-title {
+        font-size: 2.8em;
+    }
+    .hero-subtitle {
+        font-size: 1.5em;
+    }
+
+    .featured-project-preview .project-highlight {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .project-highlight-img,
+    .project-highlight-content {
+        max-width: 100%;
+        padding-left: 0;
+    }
+    .project-highlight-content h3 {
+        font-size: 1.8em;
+    }
+
+    /* About Page */
+    .about-content .container {
+        flex-direction: column;
+    }
+    .about-text, .about-photo {
+        min-width: unset; /* Remove min-width */
+        width: 100%;
+    }
+    .about-photo img {
+        max-width: 80%; /* Adjust photo size for tablets */
+    }
+
+    /* Projects Page */
+    .project-detail-section .project-screenshots img {
+        width: calc(100% - 15px); /* One image per row on tablets */
+    }
+
+    /* Contact Page */
+    .contact-content {
+        flex-direction: column;
+    }
+    .contact-form-container, .contact-info-container {
+        min-width: unset;
+        width: 100%;
+    }
+}
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+    /* Global */
+    section {
+        padding: 60px 0;
+    }
+    h1 { font-size: 2.2em; }
+    h2 { font-size: 1.8em; }
+    h3 { font-size: 1.4em; }
+
+    /* Header */
+    .main-header .container {
+        flex-wrap: wrap;
+        justify-content: center; /* Center logo on top */
+    }
+    .main-header .logo {
+        margin-bottom: 15px;
+    }
+
+    .main-nav {
+        width: 100%;
+        order: 1; /* Pushes nav below logo if it wraps */
+        justify-content: flex-end; /* Pushes hamburger to right */
+    }
+
+    .hamburger-menu {
+        display: flex; /* Show hamburger on mobile */
+    }
+
+    .main-nav .nav-links {
+        display: none; /* Hide standard nav links by default */
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        background-color: #fff;
+        position: absolute; /* Position relative to body or viewport */
+        top: 80px; /* Adjust based on header height */
+        left: 0;
+        right: 0;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        padding: 20px 0;
+        border-top: 1px solid #eee;
+        z-index: 999;
+    }
+
+    .main-nav .nav-links.active {
+        display: flex; /* Show nav links when active */
+    }
+
+    .main-nav .nav-links li {
+        margin: 15px 0;
+    }
+
+    .main-nav .nav-links a {
+        font-size: 1.1em;
+        padding: 10px 0;
+        display: block;
+    }
+    .main-nav .nav-links a::after {
+        display: none; /* Hide underline on mobile menu */
+    }
+
+    /* Hamburger Animation (optional) */
+    .hamburger-menu.active span:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger-menu.active span:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger-menu.active span:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+
+    /* Home Page */
+    .hero-section {
+        padding: 80px 0 60px; /* Adjust padding */
+        min-height: auto;
+    }
+    .hero-photo {
+        width: 150px;
+        height: 150px;
+    }
+    .hero-title {
+        font-size: 2.5em;
+    }
+    .hero-subtitle {
+        font-size: 1.3em;
+    }
+    .hero-description {
+        font-size: 1em;
+    }
+    .hero-ctas .btn {
+        display: block;
+        margin: 15px auto;
+        width: 80%;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr; /* Single column on mobile */
+    }
+
+    .project-highlight-content h3 {
+        font-size: 1.6em;
+    }
+    .project-highlight-content .project-tagline {
+        font-size: 1.1em;
+    }
+    .project-highlight-content p {
+        font-size: 1em;
+    }
+
+    /* Projects Page */
+    .project-detail-section h2 {
+        font-size: 2em;
+    }
+    .project-detail-section .project-subtitle {
+        font-size: 1.1em;
+    }
+    .project-detail-section .project-screenshots img {
+        width: 100%; /* Ensure full width for mobile */
+    }
+    .project-info h3 {
+        font-size: 1.5em;
+    }
+    .project-actions .btn {
+        display: block;
+        margin: 15px auto;
+        width: 80%;
+    }
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+    .project-card h3 {
+        font-size: 1.4em;
+    }
+
+    /* Contact Page */
+    .contact-form-container h2, .contact-info-container h2 {
+        font-size: 1.8em;
+    }
+    .info-item, .social-links-vertical a {
+        font-size: 0.95em;
+    }
+}

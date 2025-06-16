@@ -1,0 +1,130 @@
+.about-hero {
+    background: linear-gradient(to right, #dbe9f6, #b0daec); /* A different light blue */
+    padding: 80px 0 60px;
+    text-align: center;
+    color: #2c3e50;
+}
+
+.about-hero h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.about-hero p {
+    font-size: 1.3em;
+    font-weight: 300;
+}
+
+.about-content {
+    padding: 80px 0;
+    text-align: left;
+}
+
+.about-content .container {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    gap: 40px;
+    align-items: center;
+}
+
+.about-text {
+    flex: 2;
+    min-width: 300px; /* Ensures text doesn't get too narrow */
+}
+
+.about-text p {
+    margin-bottom: 15px;
+    color: #555;
+    font-size: 1.1em;
+    line-height: 1.8;
+}
+
+.about-text h3 {
+    color: #3498db;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-size: 1.6em;
+}
+
+.about-text ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+
+.about-text ul li {
+    margin-bottom: 10px;
+    padding-left: 25px;
+    position: relative;
+    color: #555;
+    font-size: 1.05em;
+}
+
+.about-text ul li::before {
+    content: '•'; /* Bullet point */
+    color: #3498db;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+.about-photo {
+    flex: 1;
+    min-width: 250px;
+    text-align: center;
+}
+
+.about-photo img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Education Section */
+.education-section, .experience-section {
+    background-color: #f9fbfb;
+    padding: 60px 0;
+}
+
+.education-section h2, .experience-section h2 {
+    margin-bottom: 50px;
+}
+
+.education-item, .experience-item {
+    background-color: #fff;
+    border-left: 4px solid #3498db;
+    border-radius: 8px;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    text-align: left;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.education-item h3, .experience-item h3 {
+    color: #2c3e50;
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+
+.education-item p, .experience-item p {
+    color: #666;
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+
+.experience-item ul {
+    list-style: disc;
+    padding-left: 25px;
+    margin-top: 10px;
+}
+
+.experience-item ul li {
+    margin-bottom: 8px;
+    color: #555;
+}
