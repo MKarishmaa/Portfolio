@@ -105,7 +105,7 @@
 
 /* Specific skill icon paths - ensure these URLs are correct relative to home.css */
 .icon.html-css-js {
-    background-image: url('../assets/html-css-js.svg');
+    background-image: url('../assets/html.svg');
 }
 
 .icon.react {
